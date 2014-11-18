@@ -4,12 +4,15 @@
 <!--[if gte IE 9]><html lang="en" class="ie9"><![endif]-->
 <!--[if !IE]><!--<html lang="en"><>!--<![endif]-->
 <head>
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="noindex">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
   <meta itemprop="description" content="Responsive Email Template-design by digith.net">
   <title>DIGITH | Email Template Builder,created by johnson liu</title>
   <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
   <link href="css/jihe.css" rel="stylesheet">
+  <link href="css/color.css" rel="stylesheet"><!--3.1-->
   
   		<!--[if IE]>
 			<style type="text/css">
@@ -35,7 +38,7 @@
 			</style>
 		<![endif]-->
 </head>
-<body id="builder" class="lightt">
+<body id="builder" class="lightt redd"><!--3.1-->
   <div id="mask">
     <div id="pls-buy">
       <div><p>Many thanks for you like my template, Please buy the template to get all the resource.</p><p>+ Try the Template Builder Again!</p></div>
@@ -46,34 +49,41 @@
   <div id="guideInner">
   	<div id="cancelTabs">Close Guide</div>
     <div id="tabs">
-      <ul>
+      <ul><!--3.1-->
           <li rel="info"><a href="#tabs-1" title="click to enlage the image">- Welcome</a></li>
-          <li rel="install"><a href="ajax/info.html">- Template Info</a></li>
           <li rel="install"><a href="ajax/installation.html">Installation</a></li>
           <li rel="function"><a href="ajax/function.html">All functions</a></li>
           <li rel="layout"><a href="ajax/layout.html">Prebuild Layouts</a></li>
           <li rel="choose module"><a href="ajax/module.html">Choose Modules</a></li>
           <li rel="color"><a href="ajax/color.html">Color Setting</a></li>
           <li rel="bg"><a href="ajax/bg.html">BG/Radius/Divider</a></li>
+          <li rel="gAPI"><a href="ajax/googlefonts.html">Google Fonts</a></li>
           <li rel="download"><a href="ajax/download.html">Export the Page</a></li>
           <li rel="copyright"><a href="ajax/copyright.html">Copyright</a></li>
-          <li rel="guide"><a href="ajax/guide.html">Guide</a></li>
+          <li rel="guide"><a href="ajax/guide.html">See Guide</a></li>
           <li rel="myitem"><a href="ajax/myitem.html">All Email Templates</a></li>
           <li rel="responsive"><a href="ajax/responsive.html">Responsive Effect</a></li>
           <li rel="operate"><a href="ajax/editlayout.html">Edit Layout</a></li>
           <li rel="operate"><a href="ajax/editcontent.html">Edit Content</a></li>
           <li rel="operate"><a href="ajax/project.html">Project Manage</a></li>
           <li rel="theme"><a href="ajax/theme.html">Builder Theme</a></li>
-          <li rel="file"><a href="ajax/file.html">- File Structure</a></li>
-          <li rel="psd"><a href="ajax/psd.html">- PSD Files</a></li>
           <li rel="three"><a href="ajax/three.html">3rd Mail service</a></li>
           <li rel="credit"><a href="ajax/credit.html">Sources/Credits</a></li>
           <li rel="import"><a href="ajax/import.html">Import Things</a></li>
-          <li rel="faq"><a href="ajax/timelight.html">FAQ</a></li>
-      </ul>
-      <div id="tabs-1">
-          <h2>WELCOME TO MY TEMPLATE!</h2>
-          <img src="ajax/images/welcome.png" width="1090" height="790">
+          <li rel="faq"><a href="ajax/faq.html">FAQ</a></li>
+      </ul><!--3.1-->
+      <div id="tabs-1"><!--3.1-->
+          <h2>Welcome to View DIGITH Email Template!</h2>
+          <h3 style="margin:0px !important;padding:0px !important;line-height:24px;">- Builder Version 3.1!</h3>
+          <h3 style="margin:0px !important;padding:0px !important;line-height:24px;">- Feature</h3>
+          <ul style=" margin-left:-20px;margin-top:5px;">
+          <li>Realtime Change BG/Color/Modules/Texture</li>
+          <li>Realtime Change Google Web Fonts and Font Family</li>
+          <li>Realtime Change Builder Theme</li>
+          <li>Waterfall flow style show the preview thumbnail of prebuild layouts</li>
+          <li>3 version pages ( inline version / mailchimp / campaignmonitor )</li>
+          <li>You can find More functions......</li>
+          </ul><!--3.1-->
 
       </div>
   </div>
@@ -82,7 +92,7 @@
 
 <div id="mask2"></div>
 
-<div id="top-barr">
+<div id="top-barr"><!-- class="shadoww1" 3.1-->
   <div id="top-bar-box">
     <ul>
       <li id="barrLogo" class="menuu"><a id="digith" href="http://themeforest.net/user/digith?ref=digith" target="_blank"></a></li>
@@ -90,14 +100,18 @@
       <li id="choose-module" class="menuu" title="Choose Module"></li>
       <li id="setting-color" class="menuu" title="Setting Color"></li>
       <li id="barrBgChang" class="menuu" title="Change BG & Radius"></li>
+      <li id="barrGoogleAPI" class="menuu" title="Change Google Fonts & Style"></li>
       <li id="barrDownload" class="menuu" title="Download"></li>
+      <li id="barrGuide" class="menuu" title="See the Guide"></li><!--v3.0-->
       <li id="barrCopyRight" class="menuu" title="Copyright"></li>
-      <li id="barrGuide" class="menuu" title="See the Guide"></li>
     </ul>
   </div>
 </div>
 
 <div id="gongNeng">
+	<div id="switcher_btn"><!--3.1-->
+    <i id="tButtonImage" class="icon-chevron-left"></i><!--3.1-->
+    </div><!--3.1-->
   
   <div id="projectVersion" rev="ScenLight" class="dividerr">ScenLight Responsive Email Template</div>
   
@@ -242,16 +256,87 @@
           <!--end_BG_url_accordion--------------------------------------->
           </div>
           <ul id="border-setting">
-            <li class="small-title build-color-bg" id="radiusC"><span></span>Button Radius / Divider</li>
+            <li class="small-title build-color-bg" id="radiusC"><span></span>Value ( font / raduis / height...)</li>
           </ul> 
           <div id="accordion-radius" class="accordion">
           <!--slide accordion--------------------------------------->
           
 <ul><li class="menu-list"><div id=	"am1"	><input type="text" id=	"amount1"	 readonly/></div>	Button Radius Setting:	</li></ul><div id=	"slider-range-min1"	></div>
+<ul><li class="menu-list"><div id=	"am2"	><input type="text" id=	"amount2"	 readonly/></div>	h2 title font size	</li></ul><div id=	"slider-range-min2"	></div>
+<ul><li class="menu-list"><div id=	"am3"	><input type="text" id=	"amount3"	 readonly/></div>	h3 title font size	</li></ul><div id=	"slider-range-min3"	></div>
+<ul><li class="menu-list"><div id=	"am4"	><input type="text" id=	"amount4"	 readonly/></div>	h4 title font size	</li></ul><div id=	"slider-range-min4"	></div>
+<ul><li class="menu-list"><div id=	"am5"	><input type="text" id=	"amount5"	 readonly/></div>	h5 title font size	</li></ul><div id=	"slider-range-min5"	></div>
+<ul><li class="menu-list"><div id=	"am6"	><input type="text" id=	"amount6"	 readonly/></div>	h6 title font size	</li></ul><div id=	"slider-range-min6"	></div>
+<ul><li class="menu-list"><div id=	"am7"	><input type="text" id=	"amount7"	 readonly/></div>	Default content size	</li></ul><div id=	"slider-range-min7"	></div>
+<ul><li class="menu-list"><div id=	"am8"	><input type="text" id=	"amount8"	 readonly/></div>	Topbar content size	</li></ul><div id=	"slider-range-min8"	></div>
+<ul><li class="menu-list"><div id=	"am9"	><input type="text" id=	"amount9"	 readonly/></div>	Footer content size	</li></ul><div id=	"slider-range-min9"	></div>
+<ul><li class="menu-list"><div id=	"am10"	><input type="text" id=	"amount10"	 readonly/></div>	Button line text size	</li></ul><div id=	"slider-range-min10"	></div>
 
             
           <!--end_slide_accordion--------------------------------------->
           </div>
+        </div>
+      
+    </div>
+    
+    <div id="font-setting-box" class="gnn">
+  
+      <div id="dakuo-google-fonts-api">
+		  
+          <ul id="apiTitle">
+            <li class="small-title build-color-bg" id="ligAPI"><span></span>Google fonts API Setting</li>
+          </ul>  
+          <div id="accordion-api" class="accordion">
+          
+          <!--google API accordion--------------------------------------->
+          
+			<ul><li class="menu-list">Pls copy the regular API here( font weight included ) and reset font family and weight when API changed!<br/><div class="soo">reset font first if you using project file which used diffrent custom font!</div></li></ul>
+			<div class="in">
+				<form  action="" style="margin:0 !important; padding:0 !important; border:0;">
+					<div>
+					<input type="text" id=	"ggAPI"	 name=	"ggAPI"	 title="Input Background Image Url which you like, delete the url will delete the BG img." />
+					</div>
+					<a href="#" id=	"ChangeAPInow"	 class="ChangeAPInow">Change</a>
+				</form>
+			</div>
+
+          <!--end_google_API_accordion--------------------------------------->
+          </div>
+		  
+          <ul id="font-style-title">
+            <li class="small-title build-color-bg" id="ligFf"><span></span>Font family and font weight</li>
+          </ul>  
+          <div id="accordion-family" class="accordion">
+		  
+			 <ul><li class="menu-list">Pls reset font family if you changed Google API to display right font style!</li></ul>
+				<div class="in"> 
+				
+					 <div class="fieldset">
+					 <h5>Title font style</h5>
+					 <div class="dropdown s" id="dpmenu1"><span class="selected">Font family</span><span class="carat"></span><div><ul></ul></div></div>
+					 <div class="dropdown1" id="dpmenu2"><span class="selected">Font weight</span><span class="carat"></span><div><ul></ul></div></div>
+					 <hr>
+					 <div class="dptag g">Header h2</div>
+					 <div class="dropdown1" id="dpmenu3"><span class="selected">Font weight</span><span class="carat"></span><div><ul></ul></div></div>
+					 <div class="dptag g">h2 strong</div>
+					 <div class="dropdown1" id="dpmenu4"><span class="selected">Font weight</span><span class="carat"></span><div><ul></ul></div></div>
+					 <div class="dptag g">h4 menu</div>
+					 <div class="dropdown1" id="dpmenu5"><span class="selected">Font weight</span><span class="carat"></span><div><ul></ul></div></div>
+					 <div class="dptag g">h6 small</div>
+					 <div class="dropdown1" id="dpmenu6"><span class="selected">Font weight</span><span class="carat"></span><div><ul></ul></div></div>
+					 
+					 <h5>Content font style</h5>
+					 <div class="dropdown s" id="dpmenu7"><span class="selected">Font family</span><span class="carat"></span><div><ul></ul></div></div>
+					 <div class="dropdown1" id="dpmenu8"><span class="selected">Font weight</span><span class="carat"></span><div><ul></ul></div></div>
+					 <div class="dptag g">topbar footer</div>
+					 <div class="dropdown1" id="dpmenu9"><span class="selected">Font weight</span><span class="carat"></span><div><ul></ul></div></div>
+					 </div>
+					
+				</div>
+
+          </div>
+		  
+		  
         </div>
       
     </div>
@@ -309,7 +394,7 @@
     
     <div id="builder-info" class="gnn">
       <div id="copyright">
-        <div class="gnn_content"><h3>Digith Email Template Builder V2.0</h3>Updated date:March 1,2014<br/>&copy; digith.net, 2013-2014<br/>created by: Johnson Liu, <br/>email: digith@outlook.com<p> This email template builder created for Digith Studio's email templates buyer. If you buy the regular license, Please do not distribute the codes to any other people. Many thanks!</p></div>
+        <div class="gnn_content"><h3>Digith Email Template Builder V3.1 (Waterfall flow show layouts thumbnail and 3 color Builder themes added)</h3>Updated date: Oct 01,2014<br/>&copy; digith.net, 2013-2014<br/>created by: Johnson Liu, <br/>email: digith@outlook.com<p> This email template builder created for Digith Studio's email templates buyer. If you buy the regular license, Please do not distribute the codes to any other people. Many thanks!</p></div><!--3.1-->
       </div>
       <div id="socialB">
         <div id="facebookB"><a href="http://www.facebook.com/@digith" target="_blank"><img src="images/facebook.png" width="194" height="39" alt="facebook"></a></div>
@@ -343,10 +428,14 @@
       <ul>
         <li id="barrPurchase">
           <ol>
-            <li id="purchase"><a href="#" target="_blank">Purchase</a></li>
+            <li id="purchase"><a href="#" target="_blank">Purchase</a></li><!--3.1-->
+            <li id="orangee" class="colorT"></li>
+            <li id="bluee" class="colorT"></li>
+            <li id="redd" class="active colorT"></li>
+            <li id="teall" class="colorT"></li>
             <li id="lightt" class="active"></li>
             <li id="darkk"></li>
-            <li id="chooseTheme">Builder Theme</li>
+            <!--<li id="chooseTheme">Change Theme</li>--><!--3.1-->
           </ol>
         </li>
         <li id="template"></li>
@@ -426,19 +515,23 @@
 
 		<script src="js/jquery-1.7.1.min.js"></script>
         <script src="js/jquery-ui-1.10.4.custom.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script><!--3.1-->
         <script src="ckeditor/ckeditor.js"></script>
         <script src="ckeditor/adapters/jquery.js"></script>
         <script src="js/sonic.js"></script><!---->
         <script src="js/gongneng.js"></script>
-        <script src="http://digith.com/demo/builder.js"></script><!---->
+        <script src="http://digith.com/demo/builder.js"></script>
         <script src="js/pattern.js"></script>
         <script src="js/main.js"></script>
         <script src="js/farbtastic.js"></script>
         <script src="js/jquery.nicescroll.min.js"></script>
 		<script src="js/jquery.ui.widget.js"></script>
 		<script src="js/jquery.iframe-transport.js"></script>
-		<script src="js/jquery.fileupload.js"></script>
 		<script src="js/jquery.knob.js"></script>
+		<script src="js/jquery.fileupload.js"></script>
+		<script src="js/jquery.wookmark.min.js"></script><!--3.1-->
+		<script src="js/jquery.imagesloaded.js"></script><!--3.1-->
+		<script src="js/jquery.asexy.min.js"></script><!--3.1-->
     	<script src="js/digith.js"></script>
 </body>
 </html>

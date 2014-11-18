@@ -50,12 +50,14 @@ CKEDITOR.stylesSet.add( 'default', [
 	// (This requires the "stylescombo" plugin)
 	/*
 	{ name: 'Strong',			element: 'strong', overrides: 'b' },
+	{ name: 'Normal400',		element: 'span', attributes: { 'font-weight': '400' } },
+	{ name: 'Light300',			element: 'span', attributes: { 'font-weight': '300' } },
 	{ name: 'Emphasis',			element: 'em'	, overrides: 'i' },
 	{ name: 'Underline',		element: 'u' },
 	{ name: 'Strikethrough',	element: 'strike' },
 	{ name: 'Subscript',		element: 'sub' },
-	{ name: 'Superscript',		element: 'sup' },
-	*/
+	{ name: 'Superscript',		element: 'sup' },*/
+	
 
 	{ name: 'Marker',			element: 'span', attributes: { 'class': 'marker' } },
 

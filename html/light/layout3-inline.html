@@ -6,8 +6,8 @@
 <style type="text/css">
 /*
 *Project:	SCENLIGHT - Responsive Email Template
-*Version:	1.0
-*Creat:		04/20/14 
+*Version:	1.3
+*Creat:		06/15/14 
 *Author: 	digith 
 *Website: 	http://themeforest.net/user/digith
 */
@@ -42,7 +42,7 @@ table[class~=wrap][class~=color],table[class~=wrap][class~=header-img] {width:45
 table[class~=row] { width: 400px !important; }
 table[class~=header] .in{padding-top:30px !important;}
 table[class~=header-img] .in{padding:5px !important;}
-td[class~=header-img-td] {padding:100px 35px !important;}
+td[class~=z] {height:60px !important;}
 table[class~=avator-box]{width:100% !important; float:none !important;}
 table[class~=col2] { width: 100% !important; }
 table[class~=col3] { width: 100% !important; }
@@ -109,7 +109,7 @@ table[class~=full] img { width: 100% !important; }
 <td valign="top" class="in" style="padding: 0 10px;">
 <table border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
-<td class="content" mc:edit="top-bar" style="font-family: Tahoma, Arial;font-size: 10px;line-height: 13px;font-weight: 400;color: #abb4bd;-webkit-font-smoothing: antialiased;padding: 8px 0 9px;"><singleline label="top-bar"><webversion><a  href="#*|ARCHIVE|*" style="color: #abb4bd; text-decoration: none; outline: none;">Online Version</a></webversion> &nbsp; <forwardtoafriend><a  href="#*|FORWARD|*" style="color: #abb4bd; text-decoration: none; outline: none;">Forward</a></forwardtoafriend> &nbsp; <unsubscribe><a  href="#*|UNSUB|*" style="color: #abb4bd; text-decoration: none; outline: none;">Unsubscribe</a></unsubscribe></singleline>
+<td class="content" mc:edit="top-bar" style="font-family: Tahoma, Arial;font-size: 10px;line-height: 13px;font-weight: 400;color: #abb4bd;-webkit-font-smoothing: antialiased;padding: 8px 0 9px;"><webversion><a  href="#*|ARCHIVE|*" style="color: #abb4bd; text-decoration: none; outline: none;">Online Version</a></webversion> &nbsp; <forwardtoafriend><a  href="#*|FORWARD|*" style="color: #abb4bd; text-decoration: none; outline: none;">Forward</a></forwardtoafriend> &nbsp; <unsubscribe><a  href="#*|UNSUB|*" style="color: #abb4bd; text-decoration: none; outline: none;">Unsubscribe</a></unsubscribe>
 </td>
 </tr></tbody>
 </table>
@@ -167,33 +167,56 @@ table[class~=full] img { width: 100% !important; }
 </div>
 <!-- end - ◆header-1s◆ -->
 <!-- start ◆header-img-1s◆ -->
-<div mc:repeatable="header-img-1s"><layout label="header-img-1s">
-<table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrap header-img" style="border-collapse: collapse; background-color: #43a0dd; width: 650px; margin: 0px auto;"><tbody>
-<tr>
-<td class="in">
-<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse;"><tbody>
-<tr>
-<td valign="top" class="header-img-td" height="100" mc:edit="header-img-box-content" background="http://placehold.it/700x400/0d6053/333&text=700-400" style="padding: 110px 35px; background-color: #97a0ab; background-image: url(http://placehold.it/700x400/0d6053/333&text=700-400); background-position: 50% 50%;">
-<table border="0" cellpadding="0" cellspacing="0" class="title-box" background="images/title-bg.png" style="border-collapse: collapse;background-image: url(images/title-bg.png);background-repeat: repeat;"><tbody>
-<tr>
-<td class="general-img-td h2" mc:edit="header-img-box-Title1" style="font-family: 'Open Sans', Arial, Tohama; color: #ffffff; font-weight: 300; font-size: 30px; line-height: 30px; padding: 10px 15px;"><singleline label="h2-title1">Why Choose <strong style="font-weight: 700;">SCENE</strong>LIGHT To Send</singleline>
-</td>
-</tr></tbody>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" class="title-box" background="images/title-bg.png" style="border-collapse: collapse;background-image: url(images/title-bg.png);background-repeat: repeat;"><tbody>
-<tr>
-<td class="general-img-td h2" mc:edit="header-img-box-Title2" style="font-family: 'Open Sans', Arial, Tohama; color: #ffffff; font-weight: 300; font-size: 30px; line-height: 30px; padding: 10px 15px;"><singleline label="h2-title2">Your Email Campaign</singleline>
-</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table> </layout>
-</div>
-<!-- end - ◆header-img-1s◆ -->
+      <div mc:repeatable="header-img-1s">
+      <layout label="header-img-1s">
+      <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrap header-img" style="border-collapse: collapse;background-color: #43a0dd;width: 650px;margin: 0 auto;">
+        <tr>
+          <td class="in">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                <tr>
+                  <td valign="top" class="header-img-td" height="100" mc:edit="header-img-box-content" background="http://placehold.it/700x400/0d6053/333&text=700-400" style="background-color: #97a0ab;background-image: url(http://placehold.it/700x400/0d6053/333&text=700-400);background-position: center center;">
+	  <!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:650px;">
+        <v:fill type="tile" src="http://placehold.it/700x400/0d6053/333&text=700-400" color="#97a0ab" id="msoBG-1" />
+        <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+      <![endif]-->
+	  <div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    	<tr>
+                    		<td height="110" class="z"></td>
+                    		</tr>
+                    	<tr>
+                    		<td height="50" class="tP3" style="padding-left:35px;padding-right:35px;"><table border="0" cellpadding="0" cellspacing="0" class="title-box" background="images/title-bg.png" style="border-collapse: collapse;background-image: url(images/title-bg.png);background-repeat: repeat;">
+                      <tr>
+                        <td class="general-img-td h2" mc:edit="header-img-box-Title1" style="font-family: 'Open Sans', Arial, Tohama;color: #fff;font-weight: 300;font-size: 30px;line-height: 30px;padding: 10px 15px;"><singleline label="h2-title1">Why Choose <strong style="font-weight: 700;">SCENE</strong>LIGHT To Send</singleline></td>
+                      </tr>
+                    </table></td>
+                    		</tr>
+                    	<tr>
+                    		<td height="50" class="tP3" style="padding-left:35px;padding-right:35px;"><table border="0" cellpadding="0" cellspacing="0" class="title-box" background="images/title-bg.png" style="border-collapse: collapse;background-image: url(images/title-bg.png);background-repeat: repeat;">
+                      <tr>
+                        <td class="general-img-td h2" mc:edit="header-img-box-Title2" style="font-family: 'Open Sans', Arial, Tohama;color: #fff;font-weight: 300;font-size: 30px;line-height: 30px;padding: 10px 15px;"><singleline label="h2-title2">Your Email Campaign</singleline></td>
+                      </tr>
+                    </table></td>
+                    		</tr>
+                    	<tr>
+                    		<td height="110" class="z"></td>
+                    		</tr>
+                    	</table>
+      </div>
+	  <!--[if gte mso 9]>
+      </v:textbox>
+      </v:rect>
+      <![endif]-->
+                    </td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </table>
+      </layout>
+      </div>
+<!-- end - ◆header-img-1s◆ --> 
 <!-- start ◆space-25px◆ -->
 <div mc:repeatable="space-25px"><layout label="space-25px">
 <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="divider" style="border-collapse: collapse;width: 650px;margin: 0 auto;"><tbody>
@@ -239,8 +262,8 @@ table[class~=full] img { width: 100% !important; }
 <table width="295" border="0" align="right" cellpadding="0" cellspacing="0" class="col2" style="border-collapse: collapse;width: 295px;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
 <td class="general-img-td content" mc:edit="content" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #929ba5; -webkit-font-smoothing: antialiased; padding: 10px;">
-<span class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 16px; line-height: 24px;"><singleline label="h4-title">Pellentesque velit at mauris tinc</singleline>
-</span><br style="line-height: 20px;">
+<div class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 16px; line-height: 24px;"><singleline label="h4-title">Pellentesque velit at mauris tinc</singleline>
+</div>
 <table border="0" align="left" cellpadding="0" cellspacing="0" class="img-rounded" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
 <td class="in" style="padding: 0 10px 0 0;">
@@ -310,8 +333,8 @@ table[class~=full] img { width: 100% !important; }
 <table width="295" border="0" align="right" cellpadding="0" cellspacing="0" class="col2" style="border-collapse: collapse;width: 295px;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
 <td class="general-img-td content" mc:edit="content" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #929ba5; -webkit-font-smoothing: antialiased; padding: 10px;">
-<span class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 16px; line-height: 24px;"><singleline label="h4-title">Pellentesque velit at mauris tinc</singleline>
-</span><br style="line-height: 20px;">
+<div class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 16px; line-height: 24px;"><singleline label="h4-title">Pellentesque velit at mauris tinc</singleline>
+</div>
 <table border="0" align="left" cellpadding="0" cellspacing="0" class="img-rounded" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
 <td class="in" style="padding: 0 10px 0 0;">
@@ -392,8 +415,8 @@ table[class~=full] img { width: 100% !important; }
 </tr>
 <tr>
 <td class="general-img-td content" mc:edit="content1" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #929ba5; -webkit-font-smoothing: antialiased; padding: 10px;">
-<span class="h5" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 14px; line-height: 24px;"><singleline label="h5-title1">Pellentesque velit at</singleline>
-</span><br style="line-height: 20px;">
+<div class="h5" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 14px; line-height: 24px;"><singleline label="h5-title1">Pellentesque velit at</singleline>
+</div>
 <table border="0" align="left" cellpadding="0" cellspacing="0" class="img-rounded" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
 <td class="in" style="padding: 0 10px 0 0;">
@@ -424,8 +447,8 @@ table[class~=full] img { width: 100% !important; }
 </tr>
 <tr>
 <td class="general-img-td content" mc:edit="content2" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #929ba5; -webkit-font-smoothing: antialiased; padding: 10px;">
-<span class="h5" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 14px; line-height: 24px;"><singleline label="h5-title2">Pellentesque velit at</singleline>
-</span><br style="line-height: 20px;">
+<div class="h5" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 14px; line-height: 24px;"><singleline label="h5-title2">Pellentesque velit at</singleline>
+</div>
 <table border="0" align="left" cellpadding="0" cellspacing="0" class="img-rounded" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
 <td class="in" style="padding: 0 10px 0 0;">
@@ -456,8 +479,8 @@ table[class~=full] img { width: 100% !important; }
 </tr>
 <tr>
 <td class="general-img-td content" mc:edit="content3" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #929ba5; -webkit-font-smoothing: antialiased; padding: 10px 10px 10px 0px;">
-<span class="h5" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 14px; line-height: 24px;"><singleline label="h5-title3">Pellentesque velit at</singleline>
-</span><br style="line-height: 20px;">
+<div class="h5" style="font-family: 'Open Sans', Arial, Tohama; color: #4e5762; font-weight: 300; font-size: 14px; line-height: 24px;"><singleline label="h5-title3">Pellentesque velit at</singleline>
+</div>
 <table border="0" align="left" cellpadding="0" cellspacing="0" class="img-rounded" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody>
 <tr>
 <td class="in" style="padding: 0 10px 0 0;">
@@ -532,13 +555,18 @@ table[class~=full] img { width: 100% !important; }
 </table>
 <table width="200" border="0" align="left" cellpadding="0" cellspacing="0" class="col3 m" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 200px;"><tbody>
 <tr>
-<td class="general-img-td content" mc:edit="content1" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #77818c; -webkit-font-smoothing: antialiased; padding: 10px;"><h4 class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #bbbbbb; font-weight: 300; font-size: 16px; line-height: 24px; margin: 0px 0px 10px;"><singleline label="h4-title">Quick Link</singleline></h4><singleline label="street-no"><a  href="#" style="color: #43a0dd; text-decoration: none; outline: none;">Home</a></singleline><br style="line-height: 20px;"><singleline label="street-no"><a  href="#" style="color: #43a0dd; text-decoration: none; outline: none;">Private Policy</a></singleline><br style="line-height: 20px;"><singleline label="phone"><a  href="#" style="color: #43a0dd; text-decoration: none; outline: none;">Contact</a></singleline><br style="line-height: 20px;"><singleline label="website"><unsubscribe><a  href="#*|UNSUB|*" style="color: #43a0dd; text-decoration: none; outline: none;">Unsubscribe</a></unsubscribe></singleline>
+<td class="general-img-td content" mc:edit="content1" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #77818c; -webkit-font-smoothing: antialiased; padding: 10px;"><h4 class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #bbbbbb; font-weight: 300; font-size: 16px; line-height: 24px; margin: 0px 0px 10px;"><singleline label="h4-title">Quick Link</singleline></h4><singleline label="street-no"><a  href="#" style="color: #43a0dd; text-decoration: none; outline: none;">Home</a></singleline>
+<br><singleline label="street-no"><a  href="#" style="color: #43a0dd; text-decoration: none; outline: none;">Private Policy</a></singleline>
+<br><singleline label="phone"><a  href="#" style="color: #43a0dd; text-decoration: none; outline: none;">Contact</a></singleline>
+<br><unsubscribe><a  href="#*|UNSUB|*" style="color: #43a0dd; text-decoration: none; outline: none;">Unsubscribe</a></unsubscribe>
 </td>
 </tr></tbody>
 </table>
 <table width="190" border="0" align="right" cellpadding="0" cellspacing="0" class="col3 r" style="border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 190px;"><tbody>
 <tr>
-<td class="general-img-td content" mc:edit="content1" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #77818c; -webkit-font-smoothing: antialiased; padding: 10px 10px 10px 0px;"><h4 class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #bbbbbb; font-weight: 300; font-size: 16px; line-height: 24px; margin: 0px 0px 10px;"><singleline label="h3-title">Contact Info</singleline></h4><singleline label="street-no">Your Street Name 123,<br style="line-height: 20px;">Your City, Your Country</singleline><br style="line-height: 20px;"><singleline label="website">E: youremail@website.com</singleline><br style="line-height: 20px;"><singleline label="phone">T: (999) 1234-5678</singleline>
+<td class="general-img-td content" mc:edit="content3" style="font-family: Tahoma, Arial; font-size: 13px; line-height: 21px; font-weight: 400; color: #77818c; -webkit-font-smoothing: antialiased; padding: 10px 10px 10px 0px;"><h4 class="h4" style="font-family: 'Open Sans', Arial, Tohama; color: #bbbbbb; font-weight: 300; font-size: 16px; line-height: 24px; margin: 0px 0px 10px;"><singleline label="h3-title">Contact Info</singleline></h4><singleline label="street-no">Your Street Name 123,<br>Your City, Your Country</singleline>
+<br><singleline label="website">E: youremail@website.com</singleline>
+<br><singleline label="phone">T: (999) 1234-5678</singleline>
 </td>
 </tr></tbody>
 </table>

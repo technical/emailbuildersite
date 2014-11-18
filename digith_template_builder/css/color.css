@@ -1,0 +1,205 @@
+@charset "utf-8";
+li#redd { background-color: #E05B5B }
+li#bluee { background-color: #009CE6 }
+li#orangee { background-color: #e67e22 }
+li#teall { background-color: #1BA188 }
+.redd #switcher_btn,
+.redd #cancelTabs,
+.redd .menuu.active,
+.redd li.small-title,
+.redd #editContentButton.active,
+.redd #editLayoutButton.active,
+.redd #saveProject.active,
+.redd #uploadProject.active,
+.redd .ChangeBGnow:hover,
+.redd .ChangeAPInow:hover,
+.redd .delete:hover,
+.redd .clear:hover,
+.redd .duplicate:hover,
+.redd div#color-none,
+.redd div#color-none1,
+.redd #download-btn,
+.redd #seeGuide,
+.redd li#purchase,
+.redd #drop a,
+.redd #PjF a,
+.redd .dropdown li:hover,
+.redd .dropdown li.active,
+.redd .dropdown1 li:hover,
+.redd .dropdown1 li.active { background-color: #E05B5B }
+.redd .menuu:hover,
+.redd #editContentButton:hover,
+.redd #editLayoutButton:hover,
+.redd #saveProject:hover,
+.redd #uploadProject:hover { background-color: #c64848 !important }
+.redd #mask1 strong,
+.redd #mask1 i,
+.redd #upload ul li.error i { color: #E05B5B }
+.redd #upload ul li.error p { color: #E05B5B !important }
+.redd .menuu.active { border-bottom-color: #E05B5B }
+.redd li.small-title { border-bottom: #F78686 1px solid }
+.redd #layout_switcher li a:hover { border: 1px solid #E05B5B !important }
+.redd .active_layout { border: 2px solid #E05B5B !important }
+.redd .active_theme { border: 2px solid #E05B5B !important }
+.redd #theme_switcher a:hover { border: 1px solid #E05B5B !important }
+.redd .pattern li:hover,
+.redd .pattern li.active { border: #E05B5B 1px solid }
+.redd .pattern li.active { border: #E05B5B 2px solid }
+.bluee #switcher_btn,
+.bluee #cancelTabs,
+.bluee .menuu.active,
+.bluee li.small-title,
+.bluee #editContentButton.active,
+.bluee #editLayoutButton.active,
+.bluee #saveProject.active,
+.bluee #uploadProject.active,
+.bluee .ChangeBGnow:hover,
+.bluee .ChangeAPInow:hover,
+.bluee .delete:hover,
+.bluee .clear:hover,
+.bluee .duplicate:hover,
+.bluee div#color-none,
+.bluee div#color-none1,
+.bluee #download-btn,
+.bluee #seeGuide,
+.bluee li#purchase,
+.bluee #drop a,
+.bluee #PjF a,
+.bluee .dropdown li:hover,
+.bluee .dropdown li.active,
+.bluee .dropdown1 li:hover,
+.bluee .dropdown1 li.active { background-color: #009CE6 }
+.bluee .menuu:hover,
+.bluee #editContentButton:hover,
+.bluee #editLayoutButton:hover,
+.bluee #saveProject:hover,
+.bluee #uploadProject:hover { background-color: #057ec4 !important }
+.bluee #mask1 strong,
+.bluee #mask1 i,
+.bluee #upload ul li.error i { color: #009CE6 }
+.bluee #upload ul li.error p { color: #009CE6 !important }
+.bluee .menuu.active { border-bottom-color: #009CE6 }
+.bluee li.small-title { border-bottom: #84cdf7 1px solid }
+.bluee #layout_switcher li a:hover { border: 1px solid #009CE6 !important }
+.bluee .active_layout { border: 2px solid #009CE6 !important }
+.bluee .active_theme { border: 2px solid #009CE6 !important }
+.bluee #theme_switcher a:hover { border: 1px solid #009CE6 !important }
+.bluee .pattern li:hover,
+.bluee .pattern li.active { border: #009CE6 1px solid }
+.bluee .pattern li.active { border: #009CE6 2px solid }
+.orangee #switcher_btn,
+.orangee #cancelTabs,
+.orangee .menuu.active,
+.orangee li.small-title,
+.orangee #editContentButton.active,
+.orangee #editLayoutButton.active,
+.orangee #saveProject.active,
+.orangee #uploadProject.active,
+.orangee .ChangeBGnow:hover,
+.orangee .ChangeAPInow:hover,
+.orangee .delete:hover,
+.orangee .clear:hover,
+.orangee .duplicate:hover,
+.orangee div#color-none,
+.orangee div#color-none1,
+.orangee #download-btn,
+.orangee #seeGuide,
+.orangee li#purchase,
+.orangee #drop a,
+.orangee #PjF a,
+.orangee .dropdown li:hover,
+.orangee .dropdown li.active,
+.orangee .dropdown1 li:hover,
+.orangee .dropdown1 li.active { background-color: #e67e22 }
+.orangee .menuu:hover,
+.orangee #editContentButton:hover,
+.orangee #editLayoutButton:hover,
+.orangee #saveProject:hover,
+.orangee #uploadProject:hover { background-color: #b46219 !important }
+.orangee #mask1 strong,
+.orangee #mask1 i,
+.orangee #upload ul li.error i { color: #e67e22 }
+.orangee #upload ul li.error p { color: #e67e22 !important }
+.orangee .menuu.active { border-bottom-color: #e67e22 }
+.orangee li.small-title { border-bottom: #f9bc87 1px solid }
+.orangee #layout_switcher li a:hover { border: 1px solid #e67e22 !important }
+.orangee .active_layout { border: 2px solid #e67e22 !important }
+.orangee .active_theme { border: 2px solid #e67e22 !important }
+.orangee #theme_switcher a:hover { border: 1px solid #e67e22 !important }
+.orangee .pattern li:hover,
+.orangee .pattern li.active { border: #e67e22 1px solid }
+.orangee .pattern li.active { border: #e67e22 2px solid }
+.teall #switcher_btn,
+.teall #cancelTabs,
+.teall .menuu.active,
+.teall li.small-title,
+.teall #editContentButton.active,
+.teall #editLayoutButton.active,
+.teall #saveProject.active,
+.teall #uploadProject.active,
+.teall .ChangeBGnow:hover,
+.teall .ChangeAPInow:hover,
+.teall .delete:hover,
+.teall .clear:hover,
+.teall .duplicate:hover,
+.teall div#color-none,
+.teall div#color-none1,
+.teall #download-btn,
+.teall #seeGuide,
+.teall li#purchase,
+.teall #drop a,
+.teall #PjF a,
+.teall .dropdown li:hover,
+.teall .dropdown li.active,
+.teall .dropdown1 li:hover,
+.teall .dropdown1 li.active { background-color: #1BA188 }
+.teall .menuu:hover,
+.teall #editContentButton:hover,
+.teall #editLayoutButton:hover,
+.teall #saveProject:hover,
+.teall #uploadProject:hover { background-color: #126d5c !important }
+.teall #mask1 strong,
+.teall #mask1 i,
+.teall #upload ul li.error i { color: #1BA188 }
+.teall #upload ul li.error p { color: #1BA188 !important }
+.teall .menuu.active { border-bottom-color: #1BA188 }
+.teall li.small-title { border-bottom: #90e2d3 1px solid }
+.teall #layout_switcher li a:hover { border: 1px solid #1BA188 !important }
+.teall .active_layout { border: 2px solid #1BA188 !important }
+.teall .active_theme { border: 2px solid #1BA188 !important }
+.teall #theme_switcher a:hover { border: 1px solid #1BA188 !important }
+.teall .pattern li:hover,
+.teall .pattern li.active { border: #1BA188 1px solid }
+.teall .pattern li.active { border: #1BA188 2px solid }
+#btnBoxx { width: 270px; margin: 0 auto; clear: both; display: block; margin-bottom: 40px }
+#btnBoxx div { width: 110px; padding: 8px; text-align: center; color: #fff; -moz-border-radius: 4px; border-radius: 4px; cursor: pointer; font-size: 13px }
+#Pm1 { float: left; background: #1BA188 }
+#Pm2 { float: right; background: #009CE6 }
+#Pcontainer { width: 100%; max-width: 816px; padding: 0 10px; text-align: center }
+#Pmain { margin: 30px 0; position: relative }
+header h1 { text-align: center; font-size: 24px; line-height: 24px; font-weight: 200; margin: 40px 0 10px 0 }
+header h3 { width: 80%; margin: 0 auto; text-align: center; font-size: 18px; line-height: 24px; font-weight: 200; margin: 10px auto 30px }
+.darkk header h1,
+.darkk header h3 { color: #fff }
+.lightt header h1,
+.lightt header h3 { color: #222 }
+header p { text-align: center; font-size: 14px; color: #666666; margin: 0; font-weight: 200 }
+#Ptiles { list-style-type: none; position: relative; margin: 0 auto !important;padding:0;}
+#Ptiles li { width: 170px; background-color: #ffffff; border: 1px solid #dedede; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; display: none; cursor: pointer; padding: 4px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;float:left;}
+.ie9 #Ptiles li{display:block;margin:12px !important; }/**/
+#Ptiles li div { max-height: 260px; overflow: hidden }
+#Ptiles li img { width: 170px; height: auto }
+#Ptiles li.inactive.#PtilesB li.inactive {
+visibility:hidden;
+opacity:0
+}
+#Ptiles li img,
+#PtilesB li img { display: block }
+#Ptiles li p,
+#PtilesB li p { color: #666; font-size: 13px; line-height: 20px; text-align: center; font-weight: 200; margin: 7px 0 2px 7px }
+.wookmark-placeholder { border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; background-color: #eee; border: 1px solid #dedede; z-index: -1 }
+.example-tiles { position: relative; margin: 0; padding: 0 }
+.example-tiles li { display: block; opacity: 1; list-style-type: none; float: left; margin: 5px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out }
+.example-tiles a,
+.example-tiles a:hover { color: #555; background-color: #eee; text-align: center; display: table-cell; vertical-align: middle; width: 200px; height: 200px; font-size: 2em; font-weight: bold; text-decoration: none; border: 1px solid #ddd; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); padding: 5px 8px; border-radius: 3px }
+.example-tiles a:hover { background-color: #ddd }
