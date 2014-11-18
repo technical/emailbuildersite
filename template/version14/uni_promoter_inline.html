@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Metro - Newsletter with Template Builder</title>
+</head>
+<body style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0;background-color:#F3F3F3">
+<style type="text/css">
+
+
+	#outlook a{padding:0;}
+
+	body{width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0;}
+
+	.ExternalClass{width:100%;}
+
+	.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{line-height:100%;}
+
+	.bodytbl{margin:0;padding:0;width:100% !important;}
+
+	img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:block;max-width:100%;}
+
+	a img{border:none;}
+
+	p{margin:1em 0;}
+
+	
+	table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+
+	table td{border-collapse:collapse;}
+
+	.o-fix table,.o-fix td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+
+	
+	body,.bodytbl{background-color:#F3F3F3;}
+
+	table{color:#252525;}
+
+	div{color:#252525;}
+
+	.h1 div{color:#111111;}
+
+	.h2 div{color:#252525;}
+
+	.h div{color:#111111;}
+
+
+	.wrap.header{}
+	.wrap.body,.wrap .body{background-color:#7B6878;}
+
+	.wrap.footer{}
+	.gap{line-height:2px;font-size:2px;height:8px;}
+
+	.padd{width:16px;}
+
+	
+	
+	a{color:#111111;}
+
+	a:link,a:visited,a:hover{color:#111111;}
+
+	.btn a,.btn a img{background:#585858;}
+
+	.invert div a{color:#121212;}
+
+	.h-16{line-height:1px;font-size:1px;height:16px;}
+
+	
+	body{margin:0;padding:0;}
+
+	.bodytbl{margin:0;padding:0;-webkit-text-size-adjust:none;}
+
+	table{font-family:Helvetica,Arial,sans-serif;font-size:12px;}
+
+	div{line-height:24px;}
+
+	td,tr{padding:0;}
+
+	ul{margin-top:24px;margin-bottom:24px;}
+ 
+	li{line-height:24px;}
+
+	a{text-decoration:none;padding:2px 0px;font-weight:bold;}
+
+	.h1 div{font-family:"Segoe UI","Open Sans",Helvetica,Arial,sans-serif;height:44px;font-size:50px;letter-spacing:-1px;line-height:45px;font-weight:100;}
+
+	.h2 div{font-family:"Segoe UI","Open Sans",Helvetica,Arial,sans-serif;height:22px;font-size:19px;letter-spacing:-0.05em;font-weight:100;}
+
+	.h div{font-family:Helvetica,Arial,sans-serif;font-size:30px;letter-spacing:-2px;margin-bottom:5px;line-height:30px;font-weight:100;}
+
+	.small div{font-size:11px;line-height:16px;}
+
+	.btn{margin-top:10px;display:block;}
+
+	.btn a{display:inline-block;padding:0;line-height:0.5em;}
+
+	.btn img,.social img{display:inline;margin:0;}
+
+	div.preheader{line-height:0px;font-size:0px;height:0px;display:none !important;visibility:hidden;text-indent:-9999px;}
+
+
+	@media only screen and (max-width: 480px) {
+		td[class~=padd]{width:8px !important;}
+
+		table[class~=wrap]{width:462px !important;height:auto !important;}
+
+		table[class~=wrap] table{width:100% !important;}
+
+		table[class~=wrap] img {max-width:100% !important;height:auto !important;}
+
+		table[class~=wrap] .m-padd {padding:0 20px !important;}
+
+		table[class~=wrap] .m-auto {width:auto !important;}
+
+		[class~=m-0]{width:0;display:none;}
+
+		[class~=m-b]{display:block;width:100% !important;}
+
+		[class~=m-m-b]{margin-bottom:8px !important;}
+
+		[class~=m-h-a]{height:auto !important;}
+
+		table[class~=wrap] .m-mac{width:339px !important;margin-left:38px;}
+
+		table[class~=wrap] .m-mac-h img{height:192px !important;}
+
+		table[class~=wrap] .m-mac-b img{max-width:406px !important;margin-left:4px;}
+
+		table[class~=wrap] [class~=m-1-2]{width:226px !important;}
+
+		table[class~=wrap] [class~=m-1-4]{width:109px !important;}
+
+		table[class~=wrap] [class~=m-3-4]{width:345px !important;}
+
+		table[class~=wrap] [class~=m-h-2]{height:226px;}
+
+		table[class~=wrap] .preintro td{height: auto;float:right}
+		table[class~=wrap] table.social {float:left;width:auto !important;margin-right:8px;}
+
+		table[class~=wrap] table.social td.body{width:44px !important;}
+
+	}
+	
+	@media only screen and (max-width: 360px) {
+		table[class~=wrap]{width:304px !important;}
+
+		table[class~=wrap] .m-mac{width:238px !important;margin-left:23px;}
+
+		table[class~=wrap] .m-mac-h img{height:134px !important;}
+
+		table[class~=wrap] .m-mac-b img{max-width:285px !important;margin-left:-1px;}
+
+		table[class~=wrap] .h1 div{height:34px !important;font-size:40px !important;letter-spacing:-1px !important;line-height:32px !important;}
+
+		table[class~=wrap] .h2 div{height:15px !important;font-size:12px !important;line-height:14px !important;}
+
+		table[class~=wrap] .h div{font-size:18px !important;letter-spacing:-1px !important;margin-bottom:3px !important;line-height:20px !important;}
+
+		table[class~=wrap] [class~=m-1-2]{width:149px !important;}
+
+		table[class~=wrap] [class~=m-1-4]{width:109px !important;}
+
+		table[class~=wrap] [class~=m-3-4]{width:288px !important;}
+
+		table[class~=wrap] table.social td{max-width:26px !important;}
+
+	}
+
+	
+
+</style>
+
+<table class="bodytbl" width="100%" cellspacing="0" cellpadding="0" style="margin:0;padding:0;width:100% !important;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#F3F3F3;color:#252525;-webkit-text-size-adjust:none;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr style="padding:0">
+<td align="center" style="border-collapse:collapse;padding:0">
+	
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr height="24" style="padding:0"><td align="center" valign="top" style="border-collapse:collapse;padding:0"><div class="preheader" style="color:#252525;line-height:0px;font-size:0px;height:0px;display:none !important;visibility:hidden;text-indent:-9999px"><!-- PREHEADER --></div></td></tr></table>
+<table width="600" cellpadding="0" cellspacing="0" class="wrap" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr style="padding:0">
+<td valign="bottom" align="center" style="border-collapse:collapse;padding:0">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr style="padding:0">
+<!-- CONTENT start --><td valign="bottom" width="296" align="left" class="m-b" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+						<div class="h1" style="color:#252525;line-height:24px"><span>Metro</span></div>
+						<div class="h2" style="color:#252525;line-height:24px"><span>Newsletter with Template Builder</span></div>
+					</td>
+					<td valign="bottom" width="296" align="right" class="m-1-4" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+						<div class="small" style="color:#252525;line-height:24px"><span><a href="#" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold">view it online</a> or <a href="#" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold">unsubscribe</a></span></div>
+					</td>
+		<!-- CONTENT end -->
+				</tr></table>
+</td>
+		</tr>
+<tr height="8" class="gap" style="line-height:2px;font-size:2px;height:8px;padding:0"><td style="border-collapse:collapse;padding:0">&nbsp;</td></tr>
+</table>
+<!-- ☺ header block ends here -->
+
+
+
+
+
+
+
+
+
+<!-- iPhone Promotion start  --><table width="600" cellpadding="0" cellspacing="0" class="wrap" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr style="padding:0">
+<td valign="top" align="center" style="border-collapse:collapse;padding:0">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr style="padding:0">
+<td valign="top" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+		<!-- CONTENT start -->
+					<table width="296" cellspacing="0" cellpadding="0" align="right" class="m-b m-m-b body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;background-color:#7B6878;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr style="padding:0">
+<td width="16" class="padd" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:16px;padding:0">&nbsp;</td>
+						<td valign="top" align="left" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+						<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr style="padding:0"><td colspan="3" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0"><img src="img/iphone_top.png" class="m-b" alt="" title="" width="264" height="93" border="0" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:block;max-width:100%"></td></tr>
+<tr style="padding:0">
+<td valign="top" align="right" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0"><img src="img/iphone_left.png" alt="" title="" width="23" height="228" border="0" style="max-height:228px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:block;max-width:100%"></td>
+							<td valign="top" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0"><img src="http://images.revaxarts-themes.com/static/iphone_screen_anim_222x228.gif" alt="" title="" width="222" height="228" border="0" style="max-width:100%;max-height:228px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:block"></td>
+							<td valign="top" width="19" align="left" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0"><img src="img/iphone_right.png" alt="" title="" width="19" height="228" border="0" style="max-height:228px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:block;max-width:100%"></td>
+						</tr>
+</table>
+</td>
+					</tr></table>
+<table width="296" height="200" cellspacing="0" cellpadding="0" align="left" class="body m-h-a" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;background-color:#7B6878;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr style="padding:0"><td height="16" colspan="3" class="h-16" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;line-height:1px;font-size:1px;height:16px;padding:0">&nbsp;</td></tr>
+<tr style="padding:0">
+<td width="16" height="289" class="padd m-h-a" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:16px;padding:0">&nbsp;</td>
+						<td valign="top" align="left" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+						<div class="h" style="color:#252525;line-height:24px"><span>Your iPhone App</span></div>
+						<div style="color:#252525;line-height:24px">
+							 Li Europan lingu es es membres del sam familie. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun.
+						</div>
+						<div class="btn" style="color:#252525;line-height:24px;margin-top:10px;display:block">
+							<a href="#" style="color:#111111;background:#585858;text-decoration:none;padding:0;font-weight:bold;display:inline-block;line-height:0.5em"><img src="img/store.png" width="167" height="69" alt="" title="" border="0" style="max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;background:#585858;margin:0"></a>
+						</div>
+						</td>
+						<td width="16" class="padd" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:16px;padding:0">&nbsp;</td>
+					</tr>
+<tr style="padding:0"><td height="16" colspan="3" class="h-16" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;line-height:1px;font-size:1px;height:16px;padding:0">&nbsp;</td></tr>
+</table>
+</td>
+		<!-- CONTENT end -->
+				</tr></table>
+</td>
+		</tr>
+<tr height="8" class="gap" style="line-height:2px;font-size:2px;height:8px;padding:0"><td style="border-collapse:collapse;padding:0">&nbsp;</td></tr>
+</table>
+<!-- iPhone Promotion end   -->
+
+
+
+
+
+
+
+
+
+<!-- 1/1 Column start  --><table width="600" cellpadding="0" cellspacing="0" class="wrap" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr style="padding:0">
+<td valign="top" align="center" class="body" style="border-collapse:collapse;background-color:#7B6878;padding:0">
+				<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr height="16" style="padding:0"><td colspan="3" style="border-collapse:collapse;padding:0"></td></tr>
+<tr style="padding:0">
+<td width="16" class="padd" style="border-collapse:collapse;width:16px;padding:0">&nbsp;</td>
+		<!-- CONTENT start -->
+					<td valign="top" align="left" style="border-collapse:collapse;padding:0">
+						<div class="h" style="color:#252525;line-height:24px"><span>Headline</span></div>
+						<div style="color:#252525;line-height:24px">
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+						</div>
+						<div class="btn" style="color:#252525;line-height:24px;margin-top:10px;display:block">
+							<a href="#" style="color:#111111;background:#585858;text-decoration:none;padding:0;font-weight:bold;display:inline-block;line-height:0.5em"><img src="img/more.png" width="94" height="30" alt="read more" title="read more" style="background-color:#585858;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;background:#585858;margin:0" border="0"></a>
+						</div>
+					</td>
+		<!-- CONTENT end -->
+					<td width="16" class="padd" style="border-collapse:collapse;width:16px;padding:0">&nbsp;</td>
+				</tr>
+<tr height="16" style="padding:0"><td colspan="3" style="border-collapse:collapse;padding:0"></td></tr>
+</table>
+</td>
+		</tr>
+<tr height="8" class="gap" style="line-height:2px;font-size:2px;height:8px;padding:0"><td style="border-collapse:collapse;padding:0">&nbsp;</td></tr>
+</table>
+<!-- 1/1 Column end   -->
+
+
+
+
+
+
+
+
+
+<!-- Footer start --><table width="600" cellpadding="0" cellspacing="0" class="wrap" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr style="padding:0">
+<td valign="top" align="center" style="border-collapse:collapse;padding:0">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr style="padding:0">
+<td valign="top" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+					<table width="448" cellspacing="0" cellpadding="0" align="left" class="body m-m-b" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;background-color:#7B6878;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr height="16" style="padding:0"><td colspan="3" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0"></td></tr>
+<tr height="129" style="padding:0">
+<td width="16" class="padd" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:16px;padding:0">&nbsp;</td>
+						<td valign="top" align="left" class="small" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+							<div style="color:#252525;line-height:16px;font-size:11px"><span>You have received this email because you have subscribed to <a href="http://rxa.li/metro" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold">Metro Media</a> as <a href="#" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold">some@example.com</a>.<br>If you no longer wish to receive emails please <a href="#" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold">unsubscribe</a></span></div>
+							<div style="color:#252525;line-height:16px;font-size:11px"><span>&copy; 2013 Your Company here, All rights reserved</span></div>
+						</td>
+						<td width="16" class="padd" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:16px;padding:0">&nbsp;</td>
+					</tr>
+</table>
+<table width="144" cellspacing="0" cellpadding="0" valign="top" align="right" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr style="padding:0">
+<td valign="top" align="left" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">
+							<table width="100%" cellpadding="0" cellspacing="0" class="social" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr height="43" style="padding:0">
+<td width="43" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://twitter.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/twitter.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+								<td width="8" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td>
+								<td width="42" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://facebook.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/facebook.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+								<td width="8" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td>
+								<td width="43" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://microsoft.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/windows.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+							</tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="social" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px">
+<tr height="8" class="gap m-0" style="line-height:2px;font-size:2px;height:8px;padding:0"><td colspan="5" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td></tr>
+<tr height="43" style="padding:0">
+<td width="43" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://delicious.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/delicious.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+								<td width="8" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td>
+								<td width="42" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://flickr.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/flickr.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+								<td width="8" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td>
+								<td width="43" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://linkedin.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/linkedin.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+							</tr>
+<tr height="8" class="gap m-0" style="line-height:2px;font-size:2px;height:8px;padding:0"><td colspan="5" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td></tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" class="social" style="margin-right:0;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;color:#252525;font-family:Helvetica,Arial,sans-serif;font-size:12px"><tr height="43" style="padding:0">
+<td width="43" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://skype.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/skype.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+								<td width="8" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td>
+								<td width="42" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://stumbleupon.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/stumbleupon.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+								<td width="8" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0">&nbsp;</td>
+								<td width="43" align="center" class="body" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#7B6878;padding:0"><a href="https://vimeo.com" style="color:#111111;text-decoration:none;padding:2px 0px;font-weight:bold"><img src="img/vimeo.png" alt="" title="" width="32" height="32" border="0" style="max-width:100%;max-height:32px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:inline;border:none;margin:0"></a></td>
+							</tr></table>
+</td>
+					</tr></table>
+</td>
+				</tr></table>
+</td>
+		</tr>
+<tr height="8" class="gap" style="line-height:2px;font-size:2px;height:8px;padding:0"><td style="border-collapse:collapse;padding:0">&nbsp;</td></tr>
+</table>
+<!-- Footer end -->
+</td>
+</tr></table>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Metro - Newsletter with Template Builder</title>
+</head>
+<body>
+
+<style type="text/css">
+
+	#outlook a{padding:0;}
+	body{width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0;}
+	.ExternalClass{width:100%;}
+	.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{line-height:100%;}
+	.bodytbl{margin:0;padding:0;width:100% !important;}
+	img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality;display:block;max-width:100%;}
+	a img{border:none;}
+	p{margin:1em 0;}
+	
+	table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+	table td{border-collapse:collapse;}
+	.o-fix table,.o-fix td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+	
+	body,.bodytbl{background-color:#00BAE1;}
+	table{color:#EFEFEF;}
+	td,p{color:#EFEFEF;}
+	.h1{color:#F4F4F4;}
+	.h2{color:#EFEFEF;}
+	
+	h1,h2,h3,h4,h5,h6{font-family:Helvetica,Arial,sans-serif;margin:0;font-size:30px;letter-spacing:-2px;line-height:30px;font-weight:100;}
+	h2{font-size:20px;line-height:24px;}
+	h3{font-size:18px;line-height:24px;}
+	h4{font-size:16px;}
+	h5{font-size:14px;}
+	h6{font-size:12px;}
+
+	.wrap.header{}
+	.wrap.body,.wrap .body{background-color:#DF5539;}
+	.wrap.footer{}
+	.gap{line-height:2px;font-size:2px;height:8px;}
+	.h-gap{line-height:2px;font-size:2px;width:8px;}
+	.padd{width:16px;}
+	
+	a{color:#F4F4F4;}
+	a:link,a:visited,a:hover{color:#F4F4F4;}
+	.btn a,.btn a img{background:#00BAE0;}
+	.h-16{line-height:1px;font-size:1px;height:16px;}
+	
+	body{margin:0;padding:0;}
+	.bodytbl{margin:0;padding:0;-webkit-text-size-adjust:none;}
+	table{font-family:Helvetica,Arial,sans-serif;font-size:12px;}
+	p{line-height:24px;}
+	td,tr{padding:0;}
+	ul,ol{margin-top:24px;margin-bottom:24px;} 
+	li{line-height:24px;}
+	a{text-decoration:none;padding:2px 0px;font-weight:bold;}
+	.h1{font-family:"Segoe UI","Open Sans",Helvetica,Arial,sans-serif;height:44px;font-size:50px;letter-spacing:-1px;line-height:45px;font-weight:100;}
+	.h2{font-family:"Segoe UI","Open Sans",Helvetica,Arial,sans-serif;height:22px;font-size:19px;letter-spacing:-0.05em;font-weight:100;}
+	.small{font-size:11px;line-height:16px;}
+	.btn{margin-top:10px;display:block;}
+	.btn a{display:inline-block;padding:0;line-height:0.5em;}
+	.btn img,.social img{display:inline;margin:0;}
+
+	table.textbutton td{background:#00BAE0;padding:0px 12px;color:#fff;display:block;height:30px;vertical-align:top;}
+	table.textbutton a{color:#fff;font-size:15px;font-weight:100;line-height:30px;width:100%;display:inline-block;}
+
+	div.preheader{line-height:0px;font-size:0px;height:0px;display:none !important;visibility:hidden;text-indent:-9999px;}
+
+	@media only screen and (max-device-width: 480px) {
+		table[class=bodytbl] .padd{width:8px !important;}
+		table[class=bodytbl] .wrap{width:462px !important;height:auto !important;}
+		table[class=bodytbl] .wrap table{width:100% !important;}
+		table[class=bodytbl] .wrap img {max-width:100% !important;height:auto !important;}
+		table[class=bodytbl] .wrap .m-padd {padding:0 20px !important;}
+		table[class=bodytbl] .wrap .m-auto {width:auto !important;}
+		table[class=bodytbl] .wrap .m-100{width:100% !important;max-width:462px !important;}
+		table[class=bodytbl] .m-0{width:0;display:none;}
+		table[class=bodytbl] .m-b{display:block;width:100% !important;}
+		table[class=bodytbl] .m-m-b{margin-bottom:8px !important;}
+		table[class=bodytbl] .m-h-a{height:auto !important;}
+		table[class=bodytbl] .wrap .m-mac{width:340px !important;max-width:340px !important;margin-left:38px;}
+		table[class=bodytbl] .wrap .m-mac-t img{width:339px !important;}
+		table[class=bodytbl] .wrap .m-mac-h img{height:192px !important;width:15px !important;}
+		table[class=bodytbl] .wrap .m-mac-i img{width:309px !important;}
+		table[class=bodytbl] .wrap .m-mac-b img{max-width:406px !important;margin-left:4px;}
+		table[class=bodytbl] .wrap .m-1-2{width:226px !important;}
+		table[class=bodytbl] .wrap .m-1-4{width:109px !important;}
+		table[class=bodytbl] .wrap .m-3-4{width:345px !important;}
+		table[class=bodytbl] .wrap .m-h-2{height:226px;}
+		table[class=bodytbl] .wrap .preintro td{height: auto;float:right}
+		table[class=bodytbl] .wrap table.social {float:left;width:auto !important;margin-right:8px;}
+		table[class=bodytbl] .wrap table.social td.body{width:44px !important;}
+	}
+	@media only screen and (max-device-width: 320px) {
+		table[class=bodytbl] .wrap{width:304px !important;}
+		table[class=bodytbl] .wrap .m-100{max-width:304px !important;}
+		table[class=bodytbl] .wrap .m-mac{width:235px !important;max-width:235px !important;margin-left:23px;}
+		table[class=bodytbl] .wrap .m-mac-t img{width:234px !important;max-width:234px !important;}
+		table[class=bodytbl] .wrap .m-mac-h img{height:130px !important;width:11px !important;max-width:11px !important;}
+		table[class=bodytbl] .wrap .m-mac-i{width:212px !important;max-width:212px !important;height:130px !important;}
+		table[class=bodytbl] .wrap .m-mac-i img{width:212px !important;max-width:212px !important;height:130px !important;}
+		table[class=bodytbl] .wrap .m-mac-b img{max-width:280px !important;margin-left:0px;}
+		table[class=bodytbl] .wrap .h1 div{height:34px !important;font-size:40px !important;letter-spacing:-1px !important;line-height:32px !important;}
+		table[class=bodytbl] .wrap .h2 div{height:15px !important;font-size:12px !important;line-height:14px !important;}
+		table[class=bodytbl] .wrap .h div{font-size:18px !important;letter-spacing:-1px !important;margin-bottom:3px !important;line-height:20px !important;}
+		table[class=bodytbl] .wrap .m-1-2{width:149px !important;}
+		table[class=bodytbl] .wrap .m-1-4{width:109px !important;}
+		table[class=bodytbl] .wrap .m-3-4{width:288px !important;}
+		table[class=bodytbl] .wrap table.social td{max-width:26px !important;}
+	}
+
+	
+</style>
+<table class="bodytbl" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+	<td align="center">
+	
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap">
+		<tr height="24"><td align="center" valign="top"><div class="preheader"><!-- PREHEADER --></div></td></tr>
+		</table>
+		<table width="600" cellpadding="0" cellspacing="0" class="wrap">
+		<tr>
+			<td valign="bottom" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix">
+				<tr>
+		<!-- CONTENT start -->
+					<td valign="bottom" width="296" align="left" class="m-b">
+						<div class="h1"><span>Metro</span></div>
+						<div class="h2"><span>Newsletter with Template Builder</span></div>
+					</td>
+					<td valign="bottom" width="296" align="right" class="m-1-4">
+						<div class="small"><span><a href="#">view it online</a> or <a href="#">unsubscribe</a></span></div>
+					</td>
+		<!-- CONTENT end -->
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr height="8" class="gap"><td>&nbsp;</td></tr>
+		</table>
+
+<!-- ☺ header block ends here -->
+<!-- Quotation start  -->
+	
+		<table width="600" cellpadding="0" cellspacing="0" class="wrap">
+		<tr>
+			<td valign="top" align="center" class="body">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr height="16"><td></td></tr>
+				<tr>
+				<td width="16" class="padd">&nbsp;</td>
+		<!-- CONTENT start -->
+					<td valign="top" align="left">
+						<div class="h2"><span>Scientists say:</span></div>
+						<h1><span>Nothing to worry about!</span></h1>
+					</td>
+		<!-- CONTENT end -->
+				<td width="16" class="padd">&nbsp;</td>
+				</tr>
+				<tr height="16"><td></td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr height="8" class="gap"><td>&nbsp;</td></tr>
+		</table>
+	
+<!-- Quotation end   -->
+
+
+
+
+
+<!-- Double Text-Image-Image start  -->
+	
+		<table width="600" cellpadding="0" cellspacing="0" class="wrap">
+		<tr>
+			<td width="296" valign="top" align="center" class="body m-3-4">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr height="16"><td></td></tr>
+				<tr>
+				<td width="16" class="padd">&nbsp;</td>
+		<!-- CONTENT start -->
+					<td valign="top" align="left">
+						<h1><span>Headline</span></h1>
+						<div><p>
+Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+						</p></div>
+						<div class="btn">
+							<a href="#"><img src="img/more.png" width="94" height="30" alt="read more" title="read more" style="background-color:#00BAE0;max-width:94px" border="0"  /></a>
+						</div>
+					</td>
+		<!-- CONTENT end -->
+				<td width="16" class="padd">&nbsp;</td>
+				</tr>
+				<tr height="16"><td></td></tr>
+				</table>
+			</td>
+			<td width="8">&nbsp;</td>
+			<td width="296" valign="top" align="right" class="m-1-4">
+				<table width="100%" cellpadding="0" cellspacing="0" class="m-1-4">
+				<tr>
+					<td width="144" valign="top" class="body m-b m-m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=5" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+					<td width="8" class="m-0">&nbsp;</td>
+		<!-- CONTENT end -->
+					<td width="144" valign="top" class="body m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=4" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+				</tr>
+				<tr height="8" class="gap"><td colspan="3">&nbsp;</td></tr>
+				</table>
+				<table width="100%" cellpadding="0" cellspacing="0" class="m-1-4">
+				<tr>
+					<td width="144" valign="top" class="body m-b m-m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=5" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+					<td width="8" class="m-0">&nbsp;</td>
+		<!-- CONTENT end -->
+					<td width="144" valign="top" class="body m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=4" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr height="8" class="gap"><td colspan="3">&nbsp;</td></tr>
+		</table>
+	
+<!-- Double Text-Image-Image end   -->
+
+
+
+
+
+<!-- 1/2 Column start  -->
+	
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap">
+		<tr>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix">
+				<tr>
+					<td valign="top" align="left">
+						<table width="296" cellpadding="0" cellspacing="0" class="m-b" align="left">
+						<tr>
+							<td valign="top" align="left" class="body">
+								<table width="100%" cellpadding="0" cellspacing="0">
+								<tr height="16"><td colspan="3"></td></tr>
+								<tr>
+									<td width="16" class="padd">&nbsp;</td>
+						<!-- CONTENT start -->
+									<td valign="top" align="left">
+										<h1><span>Headline</span></h1>
+										<div><p>
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+										</p></div>
+										<div class="btn">
+											<a href="#"><img src="img/more.png" width="94" height="30" alt="read more" title="read more" style="background-color:#00BAE0;max-width:94px" border="0"  /></a>
+										</div>
+									</td>
+						<!-- CONTENT end -->
+									<td width="16" class="padd">&nbsp;</td>
+								</tr>
+								<tr height="16"><td colspan="3"></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr height="8" class="gap"><td>&nbsp;</td></tr>
+						</table>
+						<table width="296" cellpadding="0" cellspacing="0" class="m-b" align="right">
+						<tr>
+							<td valign="top" align="left" class="body">
+								<table width="100%" cellpadding="0" cellspacing="0">
+								<tr height="16"><td colspan="3"></td></tr>
+								<tr>
+									<td width="16" class="padd">&nbsp;</td>
+						<!-- CONTENT start -->
+									<td valign="top" align="left">
+										<h1><span>Headline</span></h1>
+										<div><p>
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+										</p></div>
+										<div class="btn">
+											<a href="#"><img src="img/more.png" width="94" height="30" alt="read more" title="read more" style="background-color:#00BAE0;max-width:94px" border="0"  /></a>
+										</div>
+									</td>
+						<!-- CONTENT end -->
+									<td width="16" class="padd">&nbsp;</td>
+								</tr>
+								<tr height="16"><td colspan="3"></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr height="8" class="gap"><td>&nbsp;</td></tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+	
+<!-- 1/2 Column end   -->
+
+
+
+
+
+<!-- Double Image-Image-Text start  -->
+	
+		<table width="600" cellpadding="0" cellspacing="0" class="wrap">
+		<tr>
+			<td width="296" valign="top" align="right" class="m-1-4">
+				<table width="100%" cellpadding="0" cellspacing="0" class="m-1-4">
+				<tr>
+					<td width="144" valign="top" class="body m-b m-m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=6" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+					<td width="8" class="m-0">&nbsp;</td>
+		<!-- CONTENT end -->
+					<td width="144" valign="top" class="body m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=7" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+				</tr>
+				<tr height="8" class="gap"><td colspan="3">&nbsp;</td></tr>
+				</table>
+				<table width="100%" cellpadding="0" cellspacing="0" class="m-1-4">
+				<tr>
+					<td width="144" valign="top" class="body m-b m-m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=6" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+					<td width="8" class="m-0">&nbsp;</td>
+		<!-- CONTENT end -->
+					<td width="144" valign="top" class="body m-b m-1-4">
+						<img src="http://images.revaxarts-themes.com/288x288.jpg?&amp;rand=7" class="m-100" alt="" title="" width="144" height="144" border="0" style="max-width:144px;"  />
+					</td>
+				</tr>
+				</table>
+			</td>
+			<td width="8">&nbsp;</td>
+			<td width="296" valign="top" align="center" class="body m-3-4">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr height="16"><td></td></tr>
+				<tr>
+				<td width="16" class="padd">&nbsp;</td>
+		<!-- CONTENT start -->
+					<td valign="top" align="left">
+						<h1><span>Headline</span></h1>
+						<div><p>
+Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+						</p></div>
+						<div class="btn">
+							<a href="#"><img src="img/more.png" width="94" height="30" alt="read more" title="read more" style="background-color:#00BAE0;max-width:94px" border="0"  /></a>
+						</div>
+					</td>
+		<!-- CONTENT end -->
+				<td width="16" class="padd">&nbsp;</td>
+				</tr>
+				<tr height="16"><td></td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr height="8" class="gap"><td colspan="3">&nbsp;</td></tr>
+		</table>
+	
+<!-- Double Image-Image-Text end   -->
+
+
+
+
+<!-- Footer start -->
+
+
+		<table width="600" cellpadding="0" cellspacing="0" class="wrap">
+		<tr>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix">
+				<tr>
+					<td valign="top">
+					<table width="448" cellspacing="0" cellpadding="0" align="left" class="body m-m-b">
+					<tr height="16"><td colspan="3"></td></tr>
+					<tr height="129">
+						<td width="16" class="padd">&nbsp;</td>
+						<td valign="top" align="left" class="small">
+							<div><span>You have received this email because you have subscribed to <a href="http://rxa.li/metro">Metro Media</a> as <a href="#">some@example.com</a>.<br />If you no longer wish to receive emails please <a href="#">unsubscribe</a></span></div>
+							<div><span>&copy; 2013 Your Company here, All rights reserved</span></div>
+						</td>
+						<td width="16" class="padd">&nbsp;</td>
+					</tr>
+					</table>
+					<table width="144" cellspacing="0" cellpadding="0" valign="top" align="right">
+					<tr>
+						<td valign="top" align="left">
+							<table width="100%" cellpadding="0" cellspacing="0" class="social">
+							<tr height="43">
+								<td width="43" align="center" class="body m-100"><a href="https://twitter.com"><img src="img/twitter.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+								<td width="8">&nbsp;</td>
+								<td width="42" align="center" class="body m-100"><a href="https://facebook.com"><img src="img/facebook.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+								<td width="8">&nbsp;</td>
+								<td width="43" align="center" class="body m-100"><a href="https://microsoft.com"><img src="img/windows.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+							</tr>
+							</table>
+							<table width="100%" cellpadding="0" cellspacing="0" class="social">
+							<tr height="8" class="gap m-0"><td colspan="5">&nbsp;</td></tr>
+							<tr height="43">
+								<td width="43" align="center" class="body m-100"><a href="https://delicious.com"><img src="img/delicious.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+								<td width="8">&nbsp;</td>
+								<td width="42" align="center" class="body m-100"><a href="https://flickr.com"><img src="img/flickr.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+								<td width="8">&nbsp;</td>
+								<td width="43" align="center" class="body m-100"><a href="https://linkedin.com"><img src="img/linkedin.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+							</tr>
+							<tr height="8" class="gap m-0"><td colspan="5">&nbsp;</td></tr>
+							</table>
+							<table width="100%" cellpadding="0" cellspacing="0" class="social" style="margin-right:0">
+							<tr height="43">
+								<td width="43" align="center" class="body m-100"><a href="https://skype.com"><img src="img/skype.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+								<td width="8">&nbsp;</td>
+								<td width="42" align="center" class="body m-100"><a href="https://stumbleupon.com"><img src="img/stumbleupon.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+								<td width="8">&nbsp;</td>
+								<td width="43" align="center" class="body m-100"><a href="https://vimeo.com"><img src="img/vimeo.png" alt="" title="" width="32" height="32" border="0" style="max-width:32px;max-height:32px;"  /></a></td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr height="8" class="gap"><td>&nbsp;</td></tr>
+		</table>
+<!-- Footer end -->
+
+
+	</td>
+</tr>
+</table>
+</body>
+</html>
